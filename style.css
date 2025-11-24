@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 600px;
+  margin: 0;
+}
+.container {
+  height: 100%; /* full page height */
+  display: flex;
+  justify-content: center; /* center left–right */
+  align-items: center; /* center top–bottom */
+  gap: 20px;
+}
+.from {
+  background-color: #1051ad;
+
+  height: 580px;
+  width: 400px;
+  padding: 30px;
+  border-radius: 18px;
+}
+.comment {
+  background-color: #fff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 180px;
+  width: 502;
+  height: 212;
+  padding: 15px;
+  border-radius: 15px;
+}
+.comment p {
+  color: #4c4c4e;
+
+  line-height: 140%;
+}
+.cader_img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
