@@ -7,19 +7,19 @@ body {
   height: 600px;
   margin: 0;
 }
+/* Container */
 .container {
-  height: 100%; /* full page height */
+  height: 100%; 
   display: flex;
-  justify-content: center; /* center left–right */
-  align-items: center; /* center top–bottom */
+  justify-content: center; 
+  align-items: center; 
   gap: 60px;
 }
+/* From left side */
 .from {
   background-color: #1051ad;
-
   height: 580px;
   width: 460px;
-  padding: 30px;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 18px;
@@ -38,9 +38,6 @@ p {
 }
 .comment {
   background-color: #fff;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin-top: 180px;
   width: 400px;
   height: 168px;
@@ -66,7 +63,25 @@ p {
   text-align: center;
   line-height: 2;
 }
-/* Sign */
+/* dots three points  */
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #8c6dfd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+.dot.active {
+  background: #fff;
+}
+
+/* Sign right side */
 .sign {
   width: 489px;
   height: 521px;
@@ -152,4 +167,61 @@ input[type="password"] {
   border: 1px solid #8561ff;
   color: #fff;
   margin-top: 30px;
+}
+
+/* Responsive  */
+
+/* Phones */
+@media (max-width: 600px) {
+  .from {
+    display: none;
+  }
+  .sign {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 15px;
+  }
+  .sign h1 {
+    font-size: 40px;
+  }
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+  }
+  .socialMedia button {
+    width: 100%;
+  }
+  .password-row {
+    display: flex;
+    gap: 150px;
+  }
+  .sign-in {
+    padding-top: 12px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .container {
+    gap: 20px;
+  }
+  .from {
+    width: 350px;
+  }
+  .prgh {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .comment {
+    width: 300px;
+    margin-top: 160px;
+  }
+  .comment p {
+    font-size: 13px;
+    font-weight: 300;
+  }
 }
